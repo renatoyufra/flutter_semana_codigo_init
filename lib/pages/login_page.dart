@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:fluttersemanaapp/pages/home_flowers_page.dart';
 
 class LoginPage extends StatefulWidget {
   @override
@@ -137,7 +138,9 @@ class _LoginPageState extends State<LoginPage> {
                 width: double.infinity,
                 height: 52.0,
                 child: ElevatedButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.push(context, MaterialPageRoute(builder: (context) => HomeFlowerPage()));
+                  },
                   child: Text(
                     "Iniciar Sesión",
                     style: TextStyle(
