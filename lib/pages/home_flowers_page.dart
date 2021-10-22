@@ -158,6 +158,18 @@ class HomeFlowerPage extends StatelessWidget {
           ),
         ),
       ),
+      bottomNavigationBar: BottomNavigationBar(
+        type: BottomNavigationBarType.fixed,
+        backgroundColor: Color(0xff0F1D1E),
+        selectedItemColor: Color(0xffFA6501),
+        unselectedItemColor: Colors.white38,
+        items: [
+          BottomNavigationBarItem(label: "Home", icon: Icon(Icons.home_filled,),),
+          BottomNavigationBarItem(label: "Search", icon: Icon(Icons.search,),),
+          BottomNavigationBarItem(label: "Cart", icon: Icon(Icons.shopping_cart_outlined,),),
+          BottomNavigationBarItem(label: "Profile", icon: Icon(Icons.person_outline_outlined,),),
+        ],
+      ),
     );
   }
 }
